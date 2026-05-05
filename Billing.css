@@ -1,0 +1,282 @@
+/* body
+{
+  background-color: #d8f7fd;
+} */
+/* ====== Navbar Styling ====== */
+.navbar {
+  background-color: #007BFF; /* Primary Blue */
+  padding: 15px 30px;
+}
+
+.navbar .nav-link {
+  color: white;
+  margin-right: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ffc107; /* Yellow on hover */
+}
+
+.navbar .nav-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.navbar .nav-link:hover {
+  color: #ffc107; /* Yellow on hover */
+}
+
+@keyframes slideDown {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* 🌟 Logo with Glow Effect */
+.nav-img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 14px;
+  border: 2px solid #00d4ff;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s;
+}
+
+.nav-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px #00d4ff;
+}
+
+/* 🧭 Navbar navigation links */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  margin-left: 200px;
+}
+
+/* ✨ Stylish Link Items */
+.navbar-nav .nav-link {
+  color: #fff;
+  padding: 14px 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(0, 212, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.navbar-nav .nav-link:hover::before {
+  left: 100%;
+}
+
+/* .navbar-nav .nav-link:hover {
+  color: #00d4ff;
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-3px);
+} */
+
+/* 🔵 Icon size */
+.navbar-nav .nav-link i {
+  font-size: 1.3rem;
+}
+
+/* 📱 Mobile Toggler */
+.navbar-toggler {
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  transform: rotate(90deg);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+/* Custom styles to enhance Bootstrap */
+.shadow-sm {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12) !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}
+
+#billItems .bill-item {
+    transition: all 0.2s ease-in-out;
+}
+
+#billItems .bill-item:hover {
+    background-color: #f8f9fa;
+}
+
+.delete-item {
+    opacity: 0.7;
+    transition: all 0.2s ease-in-out;
+}
+
+.delete-item:hover {
+    opacity: 1;
+    color: #dc3545 !important;
+}
+
+/* Billing History styles */
+.billing-history {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.history-item {
+    transition: all 0.2s ease-in-out;
+}
+
+.history-item:hover {
+    background-color: #f8f9fa !important;
+    cursor: pointer;
+}
+
+/* Print styles */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    
+    #printTemplate, #printTemplate * {
+        visibility: visible;
+    }
+    
+    #printTemplate {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* Loading state for save button */
+.btn-loading {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.btn-loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 2px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+ /* Mobile view (up to 480px) */
+ @media only screen and (max-width: 480px) {
+    body {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    form {
+      width: 100%;
+    }
+  
+    input, select, button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    table {
+      font-size: 12px;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+    }
+  
+    .btn {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  }
+  
+
+/* Tablet view (481px to 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+      font-size: 15px;
+      padding: 20px;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    input, select, button {
+      width: 90%;
+      margin-bottom: 10px;
+    }
+  
+    table {
+      font-size: 13px;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+    }
+  
+    .btn {
+      font-size: 13px;
+    }
+  }
