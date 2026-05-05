@@ -72,7 +72,7 @@ project/
 ![Login](Screenshots/Login.PNG)
 
 🏠 Dashboard
-![Dashboard](Screenshots/home.PNG)
+![home](Screenshots/home.PNG)
 
 📦 Total Products
 ![Total Products](Screenshots/Total_Products.PNG)
