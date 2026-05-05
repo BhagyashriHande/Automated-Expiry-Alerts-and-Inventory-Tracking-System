@@ -59,50 +59,50 @@ project/
 3. Start Apache and MySQL
 4. Import database in phpMyAdmin
 5. Open browser and run:
-   http://localhost/your-folder-name
+   http://localhost/Automated_Expiry_Alert
 
 ---
 
 ## 📸 Screenshots
 
 📝 Registration Page
-![Registration](Screenshots/Registration.png)
+![Registration](Screenshots/Registration.PNG)
 
 🔐 Login Page
-![Login](Screenshots/Login.png)
+![Login](Screenshots/Login.PNG)
 
 🏠 Dashboard
-![Dashboard](Screenshots/home.png)
+![Dashboard](Screenshots/home.PNG)
 
 📦 Total Products
-![Total Products](Screenshots/Total_Products.png)
+![Total Products](Screenshots/Total_Products.PNG)
 
 ⏰ Expiring This Week
-![Expiring](Screenshots/Expiring_this_week.png)
+![Expiring](Screenshots/Expiring_this_week.PNG)
 
 ⚠️ Low Stock
-![Low Stock](Screenshots/Low_stock.png)
+![Low Stock](Screenshots/Low_stock.PNG)
 
 ❌ Expired Items
-![Expired](Screenshots/Expired_Items.png)
+![Expired](Screenshots/Expired_Items.PNG)
 
 📊 Inventory Tracking
-![Inventory](Screenshots/Inventory_Tracking.png)
+![Inventory](Screenshots/Inventory_Tracking.PNG)
 
 🧾 Billing
-![Billing](Screenshots/Billing.png)
+![Billing](Screenshots/Billing.PNG)
 
 📜 Billing History
-![Billing History](Screenshots/Billing_History.png)
+![Billing History](Screenshots/Billing_History.PNG)
 
 🔍 Filtered Billing
-![Filtered Billing](Screenshots/filtered_billing_history.png)
+![Filtered Billing](Screenshots/filtered_billing_history.PNG)
 
 🖨️ Print Bill
-![Print](Screenshots/Print.png)
+![Print](Screenshots/Print.PNG)
 
 📢 Expiry Product Alert
-![Expiry Alert](Screenshots/Expiry_product_alert.png)
+![Expiry Alert](Screenshots/Expiry_product_alert.jpeg)
 
 
 
